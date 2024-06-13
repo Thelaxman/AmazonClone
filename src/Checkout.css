@@ -1,0 +1,38 @@
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+}
+
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.checkout__title {
+  margin-right: 10px;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Your existing styles for .checkout and its children */
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 767px) {
+  .checkout {
+    flex-direction: column; /* Stack items in a column on smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .checkout__ad {
+    width: 100%; /* Ensure full width for the ad on smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .checkout__title {
+    margin-right: 0; /* Reset margin for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    border-bottom: 1px solid lightgray; /* Retain border for smaller screens */
+  }
+}

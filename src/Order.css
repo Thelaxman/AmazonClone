@@ -1,0 +1,38 @@
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  border: 1px solid lightgray;
+  background-color: whtie;
+  position: relative;
+}
+.order__id {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+.order__total {
+  font-weight: 500;
+  text-align: right;
+}
+
+/* Your existing styles for .order */
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 767px) {
+  .order {
+    padding: 20px; /* Adjust padding for smaller screens */
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .order__id {
+    top: 20px; /* Adjust top position for smaller screens */
+    right: 10px; /* Adjust right position for smaller screens */
+    font-size: 12px; /* Optionally reduce font size for smaller screens */
+  }
+
+  .order__total {
+    text-align: right;
+    font-weight: 500;
+    font-size: 16px; /* Optionally adjust font size for smaller screens */
+  }
+}
